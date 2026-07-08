@@ -1,0 +1,19 @@
+/* Buttons Left — the product buttons take the LEFT side of the page and the
+   sale screen (basket) sits on the RIGHT, with journal and tender stacked
+   beside it. Panels are repositioned via the pos-container grid areas. */
+.pos-container {
+  grid-template-columns: 1.1fr 1.2fr 0.6fr;
+  grid-template-areas:
+    "products basket journal"
+    "products basket tender";
+}
+
+/* The buttons column is the primary hand zone — slightly larger tiles. */
+.grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+
+:root { --brand:#1e3a8a; --accent:#f59e0b; }
+.nav { background:var(--brand); color:#fff; padding:.6rem 1rem; display:flex; justify-content:space-between; align-items:center }
+.nav a { color:#fff; margin-left:.8rem }
+.logo img { height:30px }
+.btn { background:var(--accent); color:#1f2937 }
+.basket .total { color:var(--brand) }

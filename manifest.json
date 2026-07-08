@@ -1,0 +1,28 @@
+{
+  "id": "com.universaltill.theme-buttons-left",
+  "name": "Buttons Left Theme",
+  "version": "1.0.1",
+  "description": "POS layout theme: product buttons on the left-hand side with the sale screen (basket) on the right.",
+  "author": "Universal Till",
+  "website": "https://universaltill.com",
+  "canonical_type": "theme",
+  "runtime": "none",
+  "device_arch": "any",
+  "min_pos_version": "1.0.0",
+  "permissions": [
+    "ui.theme"
+  ],
+  "locales": [
+    "en-US"
+  ],
+  "entries": [
+    {
+      "type": "theme",
+      "key": "buttons-left",
+      "label": "Buttons Left",
+      "config": {
+        "css": "assets/theme.css"
+      }
+    }
+  ]
+}
