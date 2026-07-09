@@ -1,11 +1,15 @@
 /* Buttons Left — the product buttons take the LEFT side of the page and the
-   sale screen (basket) sits on the RIGHT, with journal and tender stacked
-   beside it. Panels are repositioned via the pos-container grid areas. */
+   transaction column (basket over tender) sits on the RIGHT. Panels are
+   repositioned via the pos-container grid areas — no markup changes. Rows
+   stay bounded fractions of the fixed-height container so nothing moves when
+   lines are added; each panel scrolls internally. (The journal lives on its
+   own /journal page since POS v0.1 one-screen layout.) */
 .pos-container {
-  grid-template-columns: 1.1fr 1.2fr 0.6fr;
+  grid-template-columns: minmax(0, 1.4fr) minmax(330px, 420px);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1.15fr);
   grid-template-areas:
-    "products basket journal"
-    "products basket tender";
+    "products basket"
+    "products tender";
 }
 
 /* The buttons column is the primary hand zone — slightly larger tiles. */
