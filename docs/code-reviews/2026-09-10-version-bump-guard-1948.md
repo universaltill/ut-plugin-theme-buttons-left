@@ -3,7 +3,7 @@
 **Date:** 2026-09-10
 **Author:** Farshid Mirza (pipeline, Sonnet dev, `complexity:medium`)
 **Independent reviewer:** Opus, fresh-context subagent (`isolation: "worktree"`)
-**PR:** universaltill/ut-plugin-theme-buttons-left#3 (branch: `feat/1948-version-bump-guard`)
+**PR:** universaltill/ut-plugin-theme-buttons-left#5 (branch: `feat/1948-version-bump-guard`)
 
 ## What shipped
 
