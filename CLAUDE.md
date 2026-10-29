@@ -21,4 +21,5 @@ One Universal Till POS **theme plugin** per repo. Full standards: `docs` repo â†
   differs from the last tag; without a bump the change lands on `main` and
   then silently never ships (ut-docs#1940). Enforced by
   `scripts/check-version-bump.sh` (CI job `version-bump`, PRs only). A PR
-  touching only `docs/`, `.github/` or `scripts/` is exempt.
+  touching only `docs/`, `.github/` or `scripts/` other than `package.sh` (the
+  packaging recipe, ut-docs#5147) is exempt.
